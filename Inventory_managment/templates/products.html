@@ -1,0 +1,333 @@
+{% extends 'base.html' %}
+
+{% block title %}Products{% endblock title %}
+
+{% block body1 %} {% endblock body1 %}
+
+{% block body2 %}
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+        {{ object.get_section_display }}
+        <div class="carousel-item active">
+            <div class="container my-5">
+                <div class="row">
+                    {% for Products in object_list %}
+                    <div class="col-md-3">
+                        <div class="card" href="{{ item.get_absolute_url }}" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text"><strong>{{ Product.item }}</strong>
+                                    {{ Product.Price }}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://source.unsplash.com/200x200/?products" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the
+                                    card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+                    {% endblock body2 %}
