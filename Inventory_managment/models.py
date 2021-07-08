@@ -1,6 +1,7 @@
 from django.db import models
 from display_app.models import Products
-from CRM.models import Sales_Orders
+from CRM.models import customers 
+
 
 # Create your models here.
 
@@ -33,6 +34,13 @@ class Inventory(models.Model):
 
 
 
+class Sales_Orders(models.Model):
+    customer = models.ForeignKey(customers, on_delete=models.PROTECT)
+    total_value = models.DecimalField(max_digits=7, decimal_places=2)
+    total_tax = models.DecimalField(max_digits=5, decimal_places=2)
+    total_amount= models.DecimalField(max_digits=7, decimal_places=2)
+
+
 class Sales_Orders_Details(models.Model):
     Sales_Order = models.ForeignKey(Sales_Orders, on_delete=models.PROTECT)
     Product = models.ForeignKey(Products, on_delete=models.PROTECT)
@@ -40,4 +48,3 @@ class Sales_Orders_Details(models.Model):
     total_value = models.PositiveIntegerField()
     tax = models.PositiveSmallIntegerField()
     amount = models.PositiveIntegerField()
-

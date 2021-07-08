@@ -8,7 +8,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{% block title %}{% endblock title %} || Chaurasiya Brothers</title>
+  <title>{% block title %}{% endblock title %} || ISC</title>
   <!-- <link rel="stylesheet" href="../static/css/bootstrap.min.css"> -->
   
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
@@ -18,317 +18,221 @@
   <style type="text/css"></style>
 </head>
 
-<body>
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
-    <div class="container">
-
-      <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="/">
-        <strong class="blue-text">Chaurasia Brothers</strong>
-      </a>
-
-      <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Links -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Left -->
-        <ul class="navbar-nav mr-auto">
-          
-        </ul>
-
-        <!-- Right -->
-        <ul class="navbar-nav nav-flex-icons">
-          
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="/accounts/login/">
-              <span class="clearfix d-none d-sm-inline-block"> Login </span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" href="/accounts/signup/">
-              <span class="clearfix d-none d-sm-inline-block"> Signup </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-
-    </div>
-  </nav>
-  {% block body1 %}{% endblock body1 %}
-  <div class="container-fluid">
-    <nav class="navbar fixed-top navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand">
-          <img src="/static/logo.gif" alt="" width="30" height="24" class="d-inline-block align-top" href="/">
-          Chaurasiya Brothers
-        </a>
-        <button class="btn btn-primary me-md-2" href="/" type="button">login</button>
-      </div>
-    </nav>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light container rounded mt-5">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/im/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/im/products">Our Products</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/im/partners">Valuable Partners</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " href="/im/contacts">Contact us</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-  </div>
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class=""></li>
-
-
-      <li data-bs-target="#myCarousel" data-bs-slide-to="1" class="active"></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="2" class=""></li>
-    </ol>
-    <div class="container-fluid">
-      <div class="carousel-inner">
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <img src="https://source.unsplash.com/1600x600/?shop" class="d-block w-100" alt="...">
-          </svg>
-        </div>
-        <div class="carousel-item active">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <img src="https://source.unsplash.com/1600x600/?mall" class="d-block w-100" alt="...">
-          </svg>
-
-
-        </div>
-        <div class="carousel-item">
-          <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <img src="https://source.unsplash.com/1600x600/?building" class="d-block w-100" alt="...">
-          </svg>
-
-
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </a>
-    <div class="carousel-caption d-none d-md-block">
-      <h6>Slide label</h6>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      <button class="btn btn-primary my-2 my-sm-0 btn-block rounded" type="submit">Be a Partner</button>
-    </div>
-  </div>
+<body data-new-gr-c-s-check-loaded="14.1014.0" data-gr-ext-installed>
 
 
 
-  {% block body2 %}{% endblock body2 %}
-  <footer id="footer" class="page-footer bd-purple-900 mt-4" style="padding-left: 0px;">
-    <div class="bd-#0099CC text-center py-4">
-      <!--Newsletter-->
-      <a id="footer-link-newsletter" href="/docs/newsletter/"
-        class="border rounded p-2 px-3 mr-4 d-none d-md-inline-block">Join our newsletter <i
-          class="fas fa-envelope white-text ml-2"> </i>
-      </a>
-      <!--Newsletter-->
-      <a id="footer-link-affiliate" href="/mdb-affiliate-program/"
-        class="border rounded p-2 px-3 mr-4 d-none d-md-inline-block">Become an Affiliate <i
-          class="fas fa-money-bill-alt white-text ml-2"> </i>
-      </a>
-      <!--Contact-->
-      <a id="footer-link-contact" href="/general/contact/"
-        class="border rounded p-2 px-3 mr-4 d-none d-md-inline-block">Contact us <i
-          class="fas fa-envelope white-text ml-2"> </i>
-      </a>
-      <!--GitHub-->
-      <a rel="nofollow" target="_blank" id="footer-link-github"
-        href="https://github.com/mdbootstrap/material-design-for-bootstrap">
-        <i class="fab fa-github white-text mr-4"> </i>
-      </a>
-      <!--Youtube-->
-      <a rel="nofollow" target="_blank" id="footer-link-youtube" href="https://www.youtube.com/watch?v=cXTThxoywNQ">
-        <i class="fab fa-youtube white-text mr-4"> </i>
-      </a>
-      <!--Facebook-->
-      <a rel="nofollow" target="_blank" id="footer-link-facebook" href="https://www.facebook.com/mdbootstrap">
-        <i class="fab fa-facebook-f white-text mr-4"> </i>
-      </a>
-      <!--Twitter-->
-      <a rel="nofollow" target="_blank" id="footer-link-twitter" href="https://twitter.com/MDBootstrap">
-        <i class="fab fa-twitter white-text"> </i>
-      </a>
-    </div>
-    <!--Footer Links-->
-    <div class="container text-center text-md-left mt-5">
-      <div class="row mt-3">
-        <!--First column-->
-        <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
-          <h6 class="text-uppercase font-weight-bold">
-            <strong>Useful links</strong>
-          </h6>
-          <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a id="footer-link-faq" href="/docs/b4/jquery/getting-started/faq/">Frequently Asked Questions</a>
-          </p>
-          <p>
-            <a id="footer-link-browsers" href="/general/browsers-and-devices/">Browsers and devices</a>
-          </p>
-          <p>
-            <a id="footer-link-license" href="/general/license/">License</a>
-          </p>
-          <p>
-            <a id="footer-link-changelog" href="/docs/b4/jquery/changelog/">ChangeLog</a>
-          </p>
-          <p>
-            <a id="footer-link-policy" href="/general/privacy-policy/">Privacy Policy</a>
-          </p>
-          <p>
-            <a id="footer-link-refund" href="/general/return-refund-policy/">Return/Refund policy</a>
-          </p>
-          <p>
-            <a id="footer-link-tutWebpush" href="https://mdbootstrap.com/resellers/">For Resellers</a>
-          </p>
-        </div>
-        <!--/.First column-->
-        <!--Second column-->
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase font-weight-bold">
-            <strong>Resources</strong>
-          </h6>
-          <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a id="footer-link-jquery" href="/docs/b4/jquery/">MDB jQuery</a>
-          </p>
-          <p>
-            <a id="footer-link-angular" href="/docs/angular/">MDB Angular</a>
-          </p>
-          <p>
-            <a id="footer-link-react" href="/docs/react/">MDB React</a>
-          </p>
-          <p>
-            <a id="footer-link-vue" href="/docs/vue/">MDB Vue</a>
-          </p>
-          <p>
-            <a id="footer-link-brandflow" href="/support/">Support forum</a>
-          </p>
-          <p>
-            <a id="footer-link-brandflow" href="/snippets/">MDB Editor &amp; Snippets </a>
-          </p>
-          <p>
-            <a id="footer-link-brandflow" href="/articles/">Articles</a>
-          </p>
-          <p>
-            <a id="footer-link-brandflow" href="/user/mdbootstrap/">News</a>
-          </p>
-          <p>
-            <a id="footer-link-freebies" href="/freebies/">Free templates</a>
-          </p>
-          <p>
-            <a id="footer-link-templates" href="/templates/">Premium templates</a>
-          </p>
-        </div>
-        <!--/.Second column-->
-        <!--Third column-->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <h6 class="text-uppercase font-weight-bold">
-            <strong>Free tutorials</strong>
-          </h6>
-          <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <p>
-            <a id="footer-link-tutBootstrap" href="/education/">Basics (HTML/CSS/JS)</a>
-          </p>
-          <p>
-            <a id="footer-link-tutBootstrap" href="/education/bootstrap/">Bootstrap &amp; web design</a>
-          </p>
-          <p>
-            <a id="footer-link-tutAngular" href="/education/angular/">Angular</a>
-          </p>
-          <p>
-            <a id="footer-link-tutAngular" href="/education/react/">React</a>
-          </p>
-          <p>
-            <a id="footer-link-tutAngular" href="/education/vue/">Vue</a>
-          </p>
-          <p>
-            <a id="footer-link-tutWordpress" href="/education/wordpress/">WordPress</a>
-          </p>
-          <p>
-            <a id="footer-link-tutWebpush" href="/articles/">Miscellaneous</a>
-          </p>
-        </div>
-        <!--/.Third column-->
-        <!--Fourth column-->
-        <div class="col-md-4 col-lg-3 col-xl-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <strong>Company</strong>
-          </h6>
-          <hr class="info-color mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
-          <!-- <p>
-                  <i class="fas fa-building mr-3"></i> Our story</p> -->
-          <p>
-            <a id="footer-link-team" href="/general/our-team/">
-              <i class="fas fa-users mr-3"></i> Our team</a>
-          </p>
-          <p>
-            <a id="footer-link-company" href="/general/contact/">
-              <i class="fab fa-mdb mr-3"></i> Company data</a>
-          </p>
-          <p>
-            <a id="footer-link-formedia" href="/general/press-pack/">
-              <i class="fas fa-bullhorn mr-3"></i> For media</a>
-          </p>
-        </div>
-        <!--/.Fourth column-->
-      </div>
-    </div>
-    <!--/.Footer Links-->
-    <!-- Copyright-->
-    <div class="footer-copyright py-3 text-center">
-      © 2020 Copyright:
-      <a href="https://mdbootstrap.com">
-        <strong> Bootstrap.com</strong>
-      </a>
-    </div>
-    <!--/.Copyright -->
-  </footer>
 
-  </div>
 
   
+  <style>@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: #1C2331!important;
+    }
+}
+
+.carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body,html{height:100%}.navbar{background-color:rgba(0,0,0,.2)}.page-footer,.top-nav-collapse{background-color:#1C2331}@media only screen and (max-width:768px){.navbar{background-color:#1C2331}}
+</style>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand" href="" target="_blank">
+      <strong>ISC</strong>
+    </a>
+
+    <!-- Collapse -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Links -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <!-- Left -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link waves-effect waves-light" href="#">Home
+            <span class="sr-only">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light" href="#" target="_blank">About ISC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light" href="#" target="_blank">Free
+            download</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link waves-effect waves-light" href="#" target="_blank">Free tutorials</a>
+        </li>
+      </ul>
+
+      <!-- Right -->
+      <ul class="navbar-nav nav-flex-icons">
+        <li class="nav-item">
+          <a href="#" class="nav-link waves-effect waves-light" target="_blank">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link waves-effect waves-light" target="_blank">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link border border-light rounded waves-effect waves-light" target="_blank">
+            <i class="fab fa-github mr-2"></i>MDB GitHub
+          </a>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+
+<div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-1z" data-slide-to="0" class=""></li>
+      <li data-target="#carousel-example-1z" data-slide-to="1" class="active"></li>
+      <li data-target="#carousel-example-1z" data-slide-to="2" class=""></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Become a Smart Seller With ISC</strong>
+              </h1>
+
+              <p>
+                <strong>Best &amp; Free Guidence and a Product Showcase Plateform.</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most useful plateform for online local retail. Loved by over 500 000 users. Video and
+                  written versions
+                  available. Create your own, stunning website.</strong>
+              </p>
+
+              <a target="_blank" href="https://mdbootstrap.com/education/bootstrap/" class="btn btn-outline-white btn-lg waves-effect waves-light">Start
+                Now
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/First slide-->
+
+      <!--Second slide-->
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url(''); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Become a Smart Seller With ISC</strong>
+              </h1>
+
+              <p>
+                <strong>Best &amp; Free Guidence and a Product Showcase Plateform.</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most useful plateform for online local retail. Loved by over 500 000 users. Video and
+                  written versions
+                  available. Create your own, stunning website.</strong>
+              </p>
+
+              <a target="_blank" href="#" class="btn btn-outline-white btn-lg waves-effect waves-light">Start
+                Now.
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/79.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+          <!-- Mask & flexbox options-->
+          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
+
+            <!-- Content -->
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong>Become a Smart Seller With ISC</strong>
+              </h1>
+
+              <p>
+                <strong>Best &amp; Free Guidence and a Product Showcase Plateform.</strong>
+              </p>
+
+              <p class="mb-4 d-none d-md-block">
+                <strong>The most useful plateform for online local retail. Loved by over 500 000 users. Video and
+                  written versions
+                  available. Create your own, stunning website.</strong>
+              </p>
+
+              <a target="_blank" href="#" class="btn btn-outline-white btn-lg waves-effect waves-light">Start
+                Now.
+                <i class="fas fa-graduation-cap ml-2"></i>
+              </a>
+            </div>
+            <!-- Content -->
+
+          </div>
+          <!-- Mask & flexbox options-->
+
+        </div>
+      </div>
+      <!--/Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+    <!--/.Controls-->
+
+  </div>
   
 </body>
-
-<!-- <script> src="static/js/jquery.js"</script>
-<script type="text/javascript" src="../static/js/bootstrap.min.js"
-     ></script> -->
+<script>   new WOW().init();</script>
 </html>
